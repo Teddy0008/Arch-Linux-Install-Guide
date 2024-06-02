@@ -128,7 +128,7 @@ Finally, you will be asked for the last sector. The recommended size of the EFI 
 Now, we have the partition made, but it is of the wrong type. To change the type, use the `t` command:
 `t`
 Then, when it asks for the type, you want to list all types by inserting `L`
-Now, all the partition types will get listed. Now, you should search for `EFI (FAT-12/16/32)` or `` and type in the prefix before it and press enter
+Now, all the partition types will get listed. Now, you should search for `EFI (FAT-12/16/32)` or `EFI System` and type in the prefix before it and press enter
 
 #### Making the Swap partition (recommended)
 *If you don't want to make a Swap partition, skip ahead to "Making the Root partition"*
@@ -143,7 +143,7 @@ Now, we have the partition made, but it is of the wrong type again. To change th
 `t`
 When it asks you for the partition number, select `2`
 Then, when it asks for the type, you want to list all types by inserting `L`
-Now, all the partition types will get listed. Now, you should search for `Linux swap / Solaris` or `` and type in the prefix that's displayed before it and press enter
+Now, all the partition types will get listed. Now, you should search for `Linux swap / Solaris` or `Linux swap` and type in the prefix that's displayed before it and press enter
 
 #### Making the Root partition (required)
 *Please note that from this point, the setup process might differ if you haven't made a Swap partition.*
@@ -158,7 +158,7 @@ Now, we have the partition made, but it is of the wrong type again. To change th
 `t`
 When it asks you for the partition number, select `3` since the root partition is the third partition
 Then, when it asks for the type, you want to list all types by inserting `L`
-Now, all the partition types will get listed. Now, you should search for `Linux` with the `83` prefix or `Linux x64/x86` with the `xx` prefix and type in the prefix and press enter
+Now, all the partition types will get listed. Now, you should search for `Linux` with the `83` prefix or `Linux root (x86-64)` with the `23` prefix and type in the prefix and press enter
 
 If you don't want to make a home partition, skip ahead to the "Finishing partitioning" step, If you do want to make a home partition, don't skip and go to the next topic
 #### Making a home partition (optional)
